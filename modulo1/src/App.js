@@ -28,7 +28,7 @@ const mario = {
 };
 
 const App = () => {
-  const dados = mario;
+  const dados = luana;
 
   const total = dados.compras
     .map((item) => Number(item.preco.replace('R$ ', '')))
@@ -40,7 +40,7 @@ const App = () => {
       <h3>Idade: {dados.idade}</h3>
       <h3>Situação: <span style={{color:dados.ativa?'green':'red'}}>{dados.ativa? "ativa" : "inativa"}</span></h3>
       <h3>Total gasto R$ {total}</h3>
-      <h3>{dados.ativa?'Tudo tranguilo':'Você esta gastando muito'}</h3>
+      <h3>{total <10000?'Tudo tranguilo':'Você esta gastando muito'}</h3>
     </>
   )
 }
