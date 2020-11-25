@@ -12,7 +12,7 @@ export const GlobalStorage = ({children }) =>{
       `https://ranekapi.origamid.dev/json/api/produto/`
     ).then((response) => response.json())
     .then((json) => setDadosG(json))
-  },[])
+  },[dadosG])
 
   function  limparDadosG(){
     setDadosG(null)
