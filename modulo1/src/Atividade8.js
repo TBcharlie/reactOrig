@@ -20,7 +20,7 @@ const Atividade8 = () => {
   return (
     <form>
       {coresArray.map((cor)=>(
-        <label>
+        <label key={cor}>
           <input 
             type="checkbox" 
             name={cor} 
