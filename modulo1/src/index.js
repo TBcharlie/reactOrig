@@ -7,12 +7,13 @@ import ReactDOM from 'react-dom';
 // import Atividade5 from './Atividade5'
 // import Atividade6 from './Atividade6'
 // import Atividade7 from './Atividade7'
-import Atividade8 from './Atividade8'
+//import Atividade8 from './Atividade8'
+import Atividade9 from './Atividade9'
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Atividade8 />
+    <Atividade9 />
   </React.StrictMode>,
   document.getElementById('root')
 );
