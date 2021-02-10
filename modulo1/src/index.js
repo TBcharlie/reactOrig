@@ -8,12 +8,13 @@ import ReactDOM from 'react-dom';
 // import Atividade6 from './Atividade6'
 // import Atividade7 from './Atividade7'
 //import Atividade8 from './Atividade8'
-import Atividade9 from './Atividade9'
+//import Atividade9 from './Atividade9'
+import App from './App505'
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Atividade9 />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
