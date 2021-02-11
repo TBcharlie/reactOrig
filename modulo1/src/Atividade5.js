@@ -14,15 +14,20 @@ const Atividade5 = () => {
   const [dados, setDados] = React.useState(null);
   const [preferPro, setPreferProd] = React.useState(null);
 
-  React.useEffect(async () => {
-    if (localStorage.getItem("preferenciaProduto") !== null) {
-      const produtoPrefer = localStorage.getItem("preferenciaProduto");
-      setLoader(true);
+  React.useEffect(() => {
+    const dadosApi = async(produtoPrefer) =>{
       const response = await fetch(
         `https://ranekapi.origamid.dev/json/api/produto/${produtoPrefer}`
       );
       const json = await response.json();
-      setDados(json);
+      return json
+    }
+    
+    if (localStorage.getItem("preferenciaProduto") !== null) {
+      const produtoPrefer = localStorage.getItem("preferenciaProduto");
+      setLoader(true);
+      const response = dadosApi(produtoPrefer)
+      setDados(response);
       setLoader(false);
       setPreferProd(produtoPrefer);
     }
