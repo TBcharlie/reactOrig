@@ -1,14 +1,15 @@
 //atividade 0212
 import React from "react";
+import {Link} from "react-router-dom"
 
 const Header = () => {
   return (
     <ul>
       <li>
-        <a href="/">Home</a>
+        <Link to="/atividade3">Home</Link>
       </li>
       <li>
-        <a href="/produtos">Produtos</a>
+        <Link to="/atividade3/produtos">Produtos</Link>
       </li>
     </ul>
   );

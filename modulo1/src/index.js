@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom';
 // import Atividade7 from './Atividade7'
 //import Atividade8 from './Atividade8'
 //import Atividade9 from './Atividade9'
-import App from './App505'
+import App from './App'
 
 
 ReactDOM.render(

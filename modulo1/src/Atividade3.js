@@ -15,7 +15,7 @@ const Atividade3 = () =>{
     return (
         <>
         <Header />
-        {pathname=== "/"?<Home color="green"/>:<Produtos color="green" produtos={produtos}/>}
+        {pathname=== "/atividade3"?<Home color="green"/>:<Produtos color="green" produtos={produtos}/>}
         </>
     )
 }

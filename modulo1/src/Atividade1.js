@@ -15,7 +15,7 @@ const luana = {
   ativa: true,
 };
 
-const mario = {
+/*const mario = {
   cliente: 'Mario',
   idade: 31,
   compras: [
@@ -25,7 +25,7 @@ const mario = {
     { nome: 'Guitarra', preco: 'R$ 3500' },
   ],
   ativa: false,
-};
+};*/
 
 const Atividade1 = () => {
   const dados = luana;
@@ -36,7 +36,7 @@ const Atividade1 = () => {
 
   return(
     <>
-      <h3>Nome: {dados.nome}</h3>
+      <h3>Nome: {dados.cliente}</h3>
       <h3>Idade: {dados.idade}</h3>
       <h3>Situação: <span style={{color:dados.ativa?'green':'red'}}>{dados.ativa? "ativa" : "inativa"}</span></h3>
       <h3>Total gasto R$ {total}</h3>

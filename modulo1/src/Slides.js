@@ -2,7 +2,7 @@ import React from 'react'
 import Slide from './Animaction505/Slide'
 
 
-const App = () => {
+const Slides = () => {
     const slides =[
         {
             id: 'slide1',
@@ -27,4 +27,4 @@ const App = () => {
 }
 
 
-export default App
+export default Slides
